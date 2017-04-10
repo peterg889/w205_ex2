@@ -1,4 +1,4 @@
-(defproject tweetwordcount "0.0.1-SNAPSHOT"
+(defproject extweetwordcount "0.0.1-SNAPSHOT"
   :source-paths ["topologies"]
   :resource-paths ["_resources"]
   :target-path "_build"

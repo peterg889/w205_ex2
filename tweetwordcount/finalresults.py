@@ -15,10 +15,10 @@ def printAll():
   cur.execute("SELECT word, count from tweetwordcount")
   records = cur.fetchall()
 
-  sorted_records =  sorted(records)
+  sorted_records =  sorted(records, key = lambda x: -x[1])
 
   for record in sorted_records:
-    print record
+    print "{},{}".format(record[0],record[1])
   conn.commit()
 
   conn.close()
